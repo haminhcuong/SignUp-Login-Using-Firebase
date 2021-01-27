@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RegisterActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/bar_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100px"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="300px"
+            android:layout_height="300px"
+            android:layout_gravity="center"
+            android:layout_margin="30px"
+            android:src="@drawable/logo_appchat" />
+
+        <EditText
+            android:id="@+id/txt_SignUp_Username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30px"
+            android:hint="Username">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/txt_SignUp_Email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30px"
+            android:hint="Email"
+            android:inputType="textEmailAddress">
+
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/txt_SignUp_Password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30px"
+            android:hint="Password"
+            android:inputType="textPassword">
+
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/txt_SignUp_RetypePassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30px"
+            android:hint="Retype Password"
+            android:inputType="textPassword">
+
+
+        </EditText>
+
+        <Button
+            android:id="@+id/btn_Register"
+            android:layout_width="700px"
+            android:layout_height="150px"
+            android:layout_margin="40px"
+            android:background="@drawable/custom_button"
+            android:text="REGISTER"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+</LinearLayout>
